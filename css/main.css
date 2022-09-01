@@ -1,0 +1,157 @@
+/* Estructura del index*/
+/* Propiedades del main*/
+body .container-1 {
+  display: grid;
+  grid-template-areas: "menu menu menu menu" "banner banner banner banner" "main main main main" "footer footer footer footer";
+  width: 100%; }
+  body .container-1 section {
+    grid-area: banner;
+    margin: 0.8rem;
+    border: 2px solid black;
+    width: 97%; }
+    body .container-1 section .banner__img {
+      width: 100%;
+      height: 100%; }
+  body .container-1 .main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    /* segunda parte del main*/ }
+    body .container-1 .main .section {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-top: 0.5rem; }
+    body .container-1 .main .section__text {
+      text-align: center; }
+      body .container-1 .main .section__text h1 {
+        margin-bottom: 1rem;
+        border: 2px solid black;
+        text-transform: uppercase;
+        background-color: #f5e9eb;
+        display: inline-block; }
+      body .container-1 .main .section__text p {
+        font-size: 21px;
+        margin: 1.5rem 1rem; }
+    body .container-1 .main img {
+      border: 2px solid black;
+      flex-direction: row;
+      margin-right: 1rem; }
+    body .container-1 .main .merchandise {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-top: 10px;
+      gap: 10px;
+      text-align: center; }
+      body .container-1 .main .merchandise .merchandise__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; }
+        body .container-1 .main .merchandise .merchandise__img img {
+          height: 70%;
+          border: 2px solid black; }
+        body .container-1 .main .merchandise .merchandise__img button {
+          width: 100px; }
+      body .container-1 .main .merchandise .merchandise__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; }
+        body .container-1 .main .merchandise .merchandise__text h2 {
+          display: inline-block;
+          border: 2px solid black;
+          text-transform: uppercase;
+          background-color: #f5e9eb; }
+        body .container-1 .main .merchandise .merchandise__text p {
+          font-size: 21px;
+          margin: 1.5rem 1rem; }
+
+/*Estructura del body "Beers"*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffc4; }
+  body div {
+    /*propiedades del main*/
+    /*Propiedades del footer*/ }
+    body div header {
+      background-color: #fefe7a;
+      grid-area: menu;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 25% 75%; }
+      body div header div {
+        text-align: center;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      body div header .menu__option {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center; }
+        body div header .menu__option ul {
+          list-style-type: none; }
+          body div header .menu__option ul li {
+            display: inline-block;
+            margin: 1rem 2rem;
+            padding: 5px;
+            font-size: 1.5rem;
+            border: 2px solid black;
+            background-color: #fafa30;
+            font-weight: bold; }
+            body div header .menu__option ul li .menu__button {
+              text-decoration: none;
+              color: black;
+              padding: 5px; }
+    body div main .beers-menu {
+      display: grid;
+      margin-top: 1rem;
+      grid-template-columns: 3fr;
+      grid-template-rows: 4fr;
+      row-gap: 1.5rem; }
+      body div main .beers-menu .beers-tittle {
+        display: flex;
+        justify-content: center; }
+        body div main .beers-menu .beers-tittle h1 {
+          text-align: center;
+          border: 2px solid black;
+          display: inline-block;
+          font-size: 40px; }
+        body div main .beers-menu .beers-tittle h2 {
+          text-align: center;
+          border: 2px solid black;
+          display: inline-block;
+          font-size: 40px; }
+      body div main .beers-menu .beers__content {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        height: 100%; }
+        body div main .beers-menu .beers__content .beers__items {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between; }
+          body div main .beers-menu .beers__content .beers__items img {
+            height: 80%; }
+    body div .footer {
+      background-color: #fefe7a;
+      grid-area: footer;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 5rem; }
+      body div .footer div ul {
+        list-style-type: none; }
+        body div .footer div ul li {
+          font-size: 1.2rem; }
+          body div .footer div ul li a {
+            text-decoration: none; }
