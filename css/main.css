@@ -1,3 +1,23 @@
+body div main .beers-menu .beers__content {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 100%; }
+
+body div main .beers-menu .beers-tittle {
+  display: flex;
+  justify-content: center; }
+  body div main .beers-menu .beers-tittle h1 {
+    text-align: center;
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 40px; }
+  body div main .beers-menu .beers-tittle h2 {
+    text-align: center;
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 40px; }
+
 /* Estructura del index*/
 /* Propiedades del main*/
 body .container-1 {
@@ -29,7 +49,7 @@ body .container-1 {
         margin-bottom: 1rem;
         border: 2px solid black;
         text-transform: uppercase;
-        background-color: #f5e9eb;
+        background-color: #ffffc4;
         display: inline-block; }
       body .container-1 .main .section__text p {
         font-size: 21px;
@@ -63,7 +83,7 @@ body .container-1 {
           display: inline-block;
           border: 2px solid black;
           text-transform: uppercase;
-          background-color: #f5e9eb; }
+          background-color: #ffffc4; }
         body .container-1 .main .merchandise .merchandise__text p {
           font-size: 21px;
           margin: 1.5rem 1rem; }
@@ -117,31 +137,18 @@ body {
       grid-template-columns: 3fr;
       grid-template-rows: 4fr;
       row-gap: 1.5rem; }
-      body div main .beers-menu .beers-tittle {
+      body div main .beers-menu .beers__content .beers__items {
         display: flex;
-        justify-content: center; }
-        body div main .beers-menu .beers-tittle h1 {
-          text-align: center;
-          border: 2px solid black;
-          display: inline-block;
-          font-size: 40px; }
-        body div main .beers-menu .beers-tittle h2 {
-          text-align: center;
-          border: 2px solid black;
-          display: inline-block;
-          font-size: 40px; }
-      body div main .beers-menu .beers__content {
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        height: 100%; }
-        body div main .beers-menu .beers__content .beers__items {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between; }
-          body div main .beers-menu .beers__content .beers__items img {
-            height: 80%; }
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; }
+        body div main .beers-menu .beers__content .beers__items img {
+          height: 80%;
+          border: 2px solid black; }
+        body div main .beers-menu .beers__content .beers__items p {
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-transform: uppercase; }
     body div .footer {
       background-color: #fefe7a;
       grid-area: footer;

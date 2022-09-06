@@ -1,6 +1,6 @@
 // links 
 @import "base/listas";
-@import "base/mixin";
+
 @import "base/extended";
 
 
@@ -49,7 +49,7 @@ body{
                     margin-bottom: 1rem;
                     border: 2px solid black;
                     text-transform: uppercase;
-                    background-color: rgb(245, 233, 235);
+                    background-color: nth($colores , 1);
                     display: inline-block;
                 }
                 p{
@@ -91,7 +91,7 @@ body{
                         display: inline-block;
                         border: 2px solid black;
                         text-transform: uppercase;
-                        background-color: rgb(245, 233, 235);
+                        background-color: nth($colores, 1);
                     }
                     p{
                         font-size: 21px;
@@ -174,6 +174,12 @@ body{
                         justify-content: space-between;
                         img{
                             height: 80%; 
+                            border: 2px solid black;
+                        }
+                        p{
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            text-transform: uppercase;
                         }
                     }
                 
